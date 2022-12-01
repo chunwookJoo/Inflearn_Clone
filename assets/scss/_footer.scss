@@ -1,0 +1,56 @@
+.footer {
+  background-color: $color-footer;
+  padding: 3rem 2rem;
+
+  .footer__nav--container {
+    max-width: $body-global-width - 50;
+    margin: 0 auto;
+    padding: 0 2rem 2rem 2rem;
+    border-bottom: 1px solid $color-dark-grey;
+    display: flex;
+    justify-content: space-between;
+    @include media(mobile) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    ul {
+      font-size: $font-sm;
+      @include media(mobile) {
+        text-align: center;
+      }
+
+      li:nth-child(1) {
+        margin-bottom: 2rem;
+        color: $color-white;
+        @include media(mobile) {
+          margin: 2rem 0 1rem 0;
+        }
+      }
+
+      li {
+        color: $color-middle-grey;
+        margin-bottom: 1rem;
+
+        span:hover {
+          cursor: pointer;
+          border-bottom: 1px solid $color-middle-grey;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+
+  .footer__company-info {
+    max-width: $body-global-width - 50;
+    margin: 0 auto;
+    padding: 2rem 2rem 0 2rem;
+
+    div {
+      margin: 1rem 0;
+      font-size: $font-ssm;
+      line-height: 1.5;
+      color: $color-middle-grey;
+    }
+  }
+}
