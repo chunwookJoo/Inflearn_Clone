@@ -1,0 +1,115 @@
+.header {
+  .header__content--container {
+    border-bottom: 1px solid $color-base-border;
+  }
+
+  .header__content,
+  .header__nav {
+    max-width: $body-global-width;
+    margin: 0 auto;
+    @include display-flex(space-between);
+  }
+
+  .header__content {
+    font-size: $font-sm;
+    padding: 0.8rem 2rem;
+    box-sizing: border-box;
+  }
+
+  .header__nav {
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    @include media(tablet) {
+      padding: 1rem;
+    }
+
+    .header__hide {
+      display: none;
+    }
+
+    .mobile-logo {
+      display: none;
+    }
+
+    .header__hide,
+    .mobile-logo {
+      @include media(tablet) {
+        flex: 1;
+        display: block;
+      }
+    }
+
+    .header__nav--links {
+      @include display-flex(flex-start);
+      gap: 2rem;
+
+      li {
+        a {
+          color: $color-base-font;
+        }
+
+        &:hover {
+          a {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+
+    .nav__search-login--container {
+      @include display-flex(flex-end);
+      gap: 1rem;
+
+      .nav__search--input {
+        display: flex;
+        align-items: center;
+        padding: 4px;
+        background-color: $color-light-grey;
+
+        input {
+          font-size: 1rem;
+          border: none;
+          padding: 4px;
+          background-color: $color-light-grey;
+        }
+      }
+
+      .nav__login--buttons {
+        .login--button {
+          @include base-button($color-base-border, $color-white, $color-white);
+        }
+
+        button {
+          padding: 0.5rem 1rem;
+          @include media(tablet) {
+            padding: 4px !important;
+            font-size: 14px !important;
+          }
+        }
+      }
+
+      .nav__login--buttons {
+        .join--button {
+          color: $color-white;
+          @include base-button(
+            $color-base-border,
+            $color-join-btn,
+            $color-join-btn-hover
+          );
+        }
+      }
+
+      .hide {
+        @include media(tablet) {
+          display: none;
+        }
+      }
+    }
+
+    .hide {
+      @include media(tablet) {
+        display: none;
+      }
+    }
+  }
+}
