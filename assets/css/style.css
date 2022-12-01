@@ -1,0 +1,1709 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  text-decoration-line: none;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header .header__content--container {
+  border-bottom: 1px solid #f1f3f5;
+}
+.header .header__content,
+.header .header__nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header__content {
+  font-size: 14px;
+  padding: 0.8rem 2rem;
+  box-sizing: border-box;
+}
+.header .header__nav {
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+@media all and (max-width: 1024px) {
+  .header .header__nav {
+    padding: 1rem;
+  }
+}
+.header .header__nav .header__hide {
+  display: none;
+}
+.header .header__nav .mobile-logo {
+  display: none;
+}
+@media all and (max-width: 1024px) {
+  .header .header__nav .header__hide,
+  .header .header__nav .mobile-logo {
+    flex: 1;
+    display: block;
+  }
+}
+.header .header__nav .header__nav--links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.header .header__nav .header__nav--links li a {
+  color: #495057;
+}
+.header .header__nav .header__nav--links li:hover a {
+  color: #47c880;
+}
+.header .header__nav .nav__search-login--container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.header .header__nav .nav__search-login--container .nav__search--input {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  background-color: #f9f9f9;
+}
+.header .header__nav .nav__search-login--container .nav__search--input input {
+  font-size: 1rem;
+  border: none;
+  padding: 4px;
+  background-color: #f9f9f9;
+}
+.header .header__nav .nav__search-login--container .nav__login--buttons .login--button {
+  font-family: "Pretendard-Regular";
+  border: 1px solid #f1f3f5;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+.header .header__nav .nav__search-login--container .nav__login--buttons .login--button:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.header .header__nav .nav__search-login--container .nav__login--buttons button {
+  padding: 0.5rem 1rem;
+}
+@media all and (max-width: 1024px) {
+  .header .header__nav .nav__search-login--container .nav__login--buttons button {
+    padding: 4px !important;
+    font-size: 14px !important;
+  }
+}
+.header .header__nav .nav__search-login--container .nav__login--buttons .join--button {
+  color: #ffffff;
+  font-family: "Pretendard-Regular";
+  border: 1px solid #f1f3f5;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #ff7867;
+}
+.header .header__nav .nav__search-login--container .nav__login--buttons .join--button:hover {
+  cursor: pointer;
+  background-color: #ee6d5c;
+}
+@media all and (max-width: 1024px) {
+  .header .header__nav .nav__search-login--container .hide {
+    display: none;
+  }
+}
+@media all and (max-width: 1024px) {
+  .header .header__nav .hide {
+    display: none;
+  }
+}
+
+.section__banner--container .banner-container .banner {
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media all and (max-width: 1024px) {
+  .section__banner--container .banner-container .banner {
+    gap: 0;
+  }
+}
+@media all and (max-width: 768px) {
+  .section__banner--container .banner-container .banner {
+    height: 260px;
+  }
+}
+.section__banner--container .banner-container .banner .banner-title {
+  max-width: 380px;
+  width: 100%;
+  color: #ffffff;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+@media all and (max-width: 768px) {
+  .section__banner--container .banner-container .banner .banner-title {
+    position: absolute;
+    bottom: 20px;
+    width: 60%;
+  }
+}
+.section__banner--container .banner-container .banner .banner-title h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+@media all and (max-width: 1024px) {
+  .section__banner--container .banner-container .banner .banner-title h1 {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 768px) {
+  .section__banner--container .banner-container .banner .banner-title h1 {
+    font-size: 24px;
+  }
+}
+.section__banner--container .banner-container .banner img {
+  height: 100%;
+}
+@media all and (max-width: 1200px) {
+  .section__banner--container .banner-container .banner img {
+    height: 80%;
+  }
+}
+@media all and (max-width: 768px) {
+  .section__banner--container .banner-container .banner img {
+    height: 100%;
+    width: 100%;
+  }
+}
+.section__banner--container .banner-container:nth-child(1) {
+  background-color: #020002;
+}
+.section__banner--container .banner-container:nth-child(2) {
+  background-color: #38e5ff;
+}
+.section__banner--container .banner-container:nth-child(2) .banner-title {
+  color: #000000;
+}
+.section__banner--container .banner-container:nth-child(3) {
+  background-color: #fbfbf3;
+}
+.section__banner--container .banner-container:nth-child(3) .banner-title {
+  color: #000000;
+}
+.section__banner--container .banner-container:nth-child(4) {
+  background-color: #3100e1;
+}
+.section__banner--container .banner-container:nth-child(5) {
+  background-color: #ff7836;
+}
+.section__banner--container .banner-container:nth-child(6) {
+  background-color: #d2d9dd;
+}
+.section__banner--container .banner-container:nth-child(6) .banner-title {
+  color: #000000;
+}
+.section__banner--container .banner-container:nth-child(7) {
+  background-color: #086397;
+}
+.section__banner--container .banner-container:nth-child(8) {
+  background-color: #59cf93;
+}
+.section__banner--container .banner-container:nth-child(9) {
+  background-color: #00c471;
+}
+
+.section__banner-nav {
+  border-bottom: 1px solid #f1f3f5;
+}
+.section__banner-nav .banner-nav-container {
+  position: relative;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  overflow-x: scroll;
+}
+.section__banner-nav .banner-nav-container .section__nav--links {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+}
+.section__banner-nav .banner-nav-container .swiper-pagination .swiper-pagination-bullet {
+  flex: 0 0 auto;
+  padding: 0 1rem;
+  height: 36px;
+  width: 100px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #000000;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.section__banner-nav .banner-nav-container .swiper-pagination .swiper-pagination-bullet-active {
+  border: 2px solid #47c880;
+  color: #47c880;
+}
+.section__banner-nav .banner-nav-container::-webkit-scrollbar {
+  height: 5px;
+}
+.section__banner-nav .banner-nav-container::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd;
+}
+.section__banner-nav .banner-nav-container::-webkit-scrollbar-track {
+  background-color: #f1f3f5;
+}
+
+main .main__search--container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+main .main__search--container h1 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+@media all and (max-width: 768px) {
+  main .main__search--container h1 {
+    font-size: 20px;
+  }
+}
+main .main__search--container .main__search--input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 600px;
+  border: 1px solid #47c880;
+  border-radius: 2rem;
+  padding: 0.8rem 1rem;
+}
+main .main__search--container .main__search--input input {
+  padding: 0.5rem;
+  width: 90%;
+  border: 0;
+}
+main .main__search--container .main__search--input span {
+  font-size: 20px;
+  color: #495057;
+}
+main .section__contents--container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+}
+main .section__contents--container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+main .section__contents--container .section__content--label {
+  color: #868686;
+  margin-bottom: 2rem;
+}
+main .section__contents--container .section__contents--links {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: scroll;
+}
+main .section__contents--container .section__contents--links li:nth-child(1) .content__img--free-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/무료강의1.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(1) .content__img--free-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(1) .content__img--free-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(1) .content__img--new-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/신규강의1.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(1) .content__img--new-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(1) .content__img--new-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(1) .content__img--article {
+  width: 389.3333333333px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/아티클1.png");
+}
+main .section__contents--container .section__contents--links li:nth-child(1) .content__img--novice-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/왕초보강의1.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(1) .content__img--novice-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(1) .content__img--novice-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(1) .content__img--roadmap {
+  width: 292px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/로드맵1.png");
+}
+main .section__contents--container .section__contents--links li:nth-child(2) .content__img--free-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/무료강의2.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(2) .content__img--free-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(2) .content__img--free-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(2) .content__img--new-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/신규강의2.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(2) .content__img--new-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(2) .content__img--new-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(2) .content__img--article {
+  width: 389.3333333333px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/아티클2.png");
+}
+main .section__contents--container .section__contents--links li:nth-child(2) .content__img--novice-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/왕초보강의2.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(2) .content__img--novice-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(2) .content__img--novice-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(2) .content__img--roadmap {
+  width: 292px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/로드맵2.png");
+}
+main .section__contents--container .section__contents--links li:nth-child(3) .content__img--free-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/무료강의3.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(3) .content__img--free-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(3) .content__img--free-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(3) .content__img--new-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/왕초보강의10.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(3) .content__img--new-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(3) .content__img--new-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(3) .content__img--article {
+  width: 389.3333333333px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/아티클3.jpg");
+}
+main .section__contents--container .section__contents--links li:nth-child(3) .content__img--novice-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/왕초보강의3.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(3) .content__img--novice-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(3) .content__img--novice-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(3) .content__img--roadmap {
+  width: 292px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/로드맵3.png");
+}
+main .section__contents--container .section__contents--links li:nth-child(4) .content__img--free-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/무료강의4.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(4) .content__img--free-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(4) .content__img--free-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(4) .content__img--new-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/신규강의4.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(4) .content__img--new-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(4) .content__img--new-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(4) .content__img--novice-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/왕초보강의4.jfif");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(4) .content__img--novice-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(4) .content__img--novice-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(4) .content__img--roadmap {
+  width: 292px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/로드맵4.png");
+}
+main .section__contents--container .section__contents--links li:nth-child(5) .content__img--free-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/무료강의5.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(5) .content__img--free-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(5) .content__img--free-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(5) .content__img--new-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/신규강의5.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(5) .content__img--new-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(5) .content__img--new-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(5) .content__img--novice-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/왕초보강의5.jpg");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(5) .content__img--novice-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(5) .content__img--novice-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(5) .content__img--roadmap {
+  width: 292px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/로드맵5.png");
+}
+main .section__contents--container .section__contents--links li:nth-child(6) .content__img--free-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/무료강의6.jfif");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(6) .content__img--free-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(6) .content__img--free-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(6) .content__img--new-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/신규강의6.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(6) .content__img--new-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(6) .content__img--new-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(6) .content__img--novice-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/왕초보강의6.jpg");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(6) .content__img--novice-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(6) .content__img--novice-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(6) .content__img--roadmap {
+  width: 292px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/로드맵6.png");
+}
+main .section__contents--container .section__contents--links li:nth-child(7) .content__img--free-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/무료강의7.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(7) .content__img--free-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(7) .content__img--free-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(7) .content__img--new-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/신규강의7.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(7) .content__img--new-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(7) .content__img--new-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(7) .content__img--novice-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/왕초보강의7.jpg");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(7) .content__img--novice-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(7) .content__img--novice-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(7) .content__img--roadmap {
+  width: 292px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/로드맵7.png");
+}
+main .section__contents--container .section__contents--links li:nth-child(8) .content__img--free-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/무료강의8.jfif");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(8) .content__img--free-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(8) .content__img--free-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(8) .content__img--new-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/무료강의10.jpg");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(8) .content__img--new-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(8) .content__img--new-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(8) .content__img--novice-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/왕초보강의8.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(8) .content__img--novice-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(8) .content__img--novice-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(8) .content__img--roadmap {
+  width: 292px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/로드맵8.png");
+}
+main .section__contents--container .section__contents--links li:nth-child(9) .content__img--free-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/무료강의9.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(9) .content__img--free-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(9) .content__img--free-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(9) .content__img--new-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/신규강의9.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(9) .content__img--new-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(9) .content__img--new-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(9) .content__img--novice-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/왕초보강의9.jpg");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(9) .content__img--novice-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(9) .content__img--novice-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(9) .content__img--roadmap {
+  width: 292px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/로드맵9.png");
+}
+main .section__contents--container .section__contents--links li:nth-child(10) .content__img--free-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/무료강의10.jpg");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(10) .content__img--free-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(10) .content__img--free-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(10) .content__img--new-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/신규강의10.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(10) .content__img--new-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(10) .content__img--new-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(10) .content__img--novice-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/왕초보강의10.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(10) .content__img--novice-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(10) .content__img--novice-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(10) .content__img--roadmap {
+  width: 292px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/로드맵10.png");
+}
+main .section__contents--container .section__contents--links li:nth-child(11) .content__img--free-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/무료강의11.jpg");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(11) .content__img--free-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(11) .content__img--free-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(11) .content__img--new-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/신규강의11.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(11) .content__img--new-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(11) .content__img--new-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(11) .content__img--novice-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/왕초보강의11.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(11) .content__img--novice-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(11) .content__img--novice-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(11) .content__img--roadmap {
+  width: 292px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/로드맵11.png");
+}
+main .section__contents--container .section__contents--links li:nth-child(12) .content__img--free-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/무료강의12.jpg");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(12) .content__img--free-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(12) .content__img--free-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(12) .content__img--new-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/신규강의12.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(12) .content__img--new-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(12) .content__img--new-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(12) .content__img--novice-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/왕초보강의12.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(12) .content__img--novice-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(12) .content__img--novice-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(12) .content__img--roadmap {
+  width: 292px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/로드맵12.png");
+}
+main .section__contents--container .section__contents--links li:nth-child(13) .content__img--novice-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/왕초보강의13.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(13) .content__img--novice-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(13) .content__img--novice-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(13) .content__img--roadmap {
+  width: 292px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url();
+}
+main .section__contents--container .section__contents--links li:nth-child(14) .content__img--novice-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/무료강의1.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(14) .content__img--novice-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(14) .content__img--novice-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(14) .content__img--roadmap {
+  width: 292px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url();
+}
+main .section__contents--container .section__contents--links li:nth-child(15) .content__img--novice-course {
+  width: 233.6px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/왕초보강의15.png");
+}
+@media all and (max-width: 1200px) {
+  main .section__contents--container .section__contents--links li:nth-child(15) .content__img--novice-course {
+    width: 294px;
+    height: 170px;
+  }
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container .section__contents--links li:nth-child(15) .content__img--novice-course {
+    height: 160px;
+  }
+}
+main .section__contents--container .section__contents--links li:nth-child(15) .content__img--roadmap {
+  width: 292px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url();
+}
+main .section__contents--container .section__contents--links li .content__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 4px;
+}
+main .section__contents--container .section__contents--links li .content__description h3,
+main .section__contents--container .section__contents--links li .content__description div {
+  margin-bottom: 0.5rem;
+}
+main .section__contents--container .section__contents--links li .content__description h3 {
+  color: #242424;
+  line-height: 1.5;
+  font-weight: bold;
+  height: 40px;
+}
+main .section__contents--container .section__contents--links li .content__description div:nth-child(2) {
+  font-size: 14px;
+  color: #5c5c5c;
+}
+main .section__contents--container .section__contents--links li .content__description div:nth-child(3) {
+  color: #fdcc11;
+}
+main .section__contents--container .section__contents--links li .content__description div:nth-child(4) {
+  font-weight: bold;
+  color: #175cbe;
+}
+main .section__contents--container .section__contents--links li .content__description div span {
+  font-size: 12px;
+  color: #868686;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  background-color: #f6d5ea;
+}
+main .section__contents--container .section__contents--links li .content__description p {
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  font-size: 16px;
+  line-height: 1.3;
+  max-height: 40px;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+main .section__contents--container .section__contents--links::-webkit-scrollbar {
+  scroll-snap-type: none;
+}
+@media all and (max-width: 768px) {
+  main .section__contents--container h2 {
+    font-size: 20px;
+  }
+}
+main .main__review--container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  gap: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media all and (max-width: 1200px) {
+  main .main__review--container {
+    gap: 1rem;
+  }
+}
+@media all and (max-width: 768px) {
+  main .main__review--container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+main .main__review--container .review--more {
+  max-width: 480px;
+}
+main .main__review--container .review--more h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+@media all and (max-width: 768px) {
+  main .main__review--container .review--more h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+}
+main .main__review--container .review--more h2 span {
+  color: #47c880;
+}
+main .main__review--container .review--more p {
+  line-height: 1.5;
+  color: #868686;
+  margin-bottom: 2rem;
+}
+main .main__review--container .review--more .more--btns button {
+  padding: 0.5rem 1rem;
+  margin: 0 4px;
+  font-family: "Pretendard-Regular";
+  border: 1px solid #47c880;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #ffffff;
+  font-size: 14px;
+}
+main .main__review--container .review--more .more--btns button:hover {
+  cursor: pointer;
+  background-color: #d6eee1;
+}
+main .main__review--container .review--lists {
+  max-width: 600px;
+  flex: 1;
+}
+@media all and (max-width: 768px) {
+  main .main__review--container .review--lists {
+    width: 100%;
+  }
+}
+main .main__review--container .review--lists ul {
+  max-height: 480px;
+  width: 100%;
+  overflow-y: scroll;
+}
+main .main__review--container .review--lists ul li {
+  padding: 1rem;
+  margin: 0.5rem 0.5rem 1.5rem 0.5rem;
+  background-color: #f9f9f9;
+  border: 1px solid #f1f3f5;
+  border-radius: 4px;
+  -webkit-user-drag: none;
+  box-shadow: 0 2px 3px rgba(0, 10, 18, 0.1), 0 0 0 1px rgba(0, 10, 18, 0.1);
+}
+main .main__review--container .review--lists ul li span {
+  color: #868686;
+}
+main .main__review--container .review--lists ul li div {
+  margin-top: 2rem;
+}
+main .main__review--container .review--lists ul li div a {
+  color: #242424;
+  font-size: 18px;
+  font-weight: bold;
+}
+main .main__review--container .review--lists ul li div p {
+  color: #868686;
+  margin-top: 1rem;
+}
+main .main__review--container .review--lists ul::-webkit-scrollbar {
+  scroll-snap-type: none;
+}
+main .main__review--container .review--lists ul:hover {
+  cursor: grab;
+}
+main .main__etc-service--container .slide-container {
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/images/슬라이드1.jpg");
+}
+main .main__etc-service--container .slide-container div {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+main .main__etc-service--container .slide-container div h3 {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #242424;
+  margin-bottom: 1rem;
+}
+@media all and (max-width: 768px) {
+  main .main__etc-service--container .slide-container div h3 {
+    font-size: 16px;
+  }
+}
+main .main__etc-service--container .slide-container div button {
+  color: #47c880;
+  font-weight: bold;
+  font-family: "Pretendard-Regular";
+  border: 1px solid none;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+main .main__etc-service--container .slide-container div button:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+}
+main .main__etc-service--container .company-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+main .main__etc-service--container .company-container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+@media all and (max-width: 1024px) {
+  main .main__etc-service--container .company-container h3 {
+    font-size: 16px;
+  }
+}
+main .main__etc-service--container .company-container .company-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+main .main__etc-service--container .company-container .company-imgs div {
+  height: 30px;
+}
+main .main__etc-service--container .company-container .company-imgs div img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+}
+@media all and (max-width: 1024px) {
+  main .main__etc-service--container .company-container .company-imgs div img {
+    width: 80%;
+    height: 80%;
+  }
+}
+main .main__etc-service--container .different-service-container {
+  background-color: #f9f9f9;
+}
+main .main__etc-service--container .different-service-container .different-contents {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+@media all and (max-width: 1024px) {
+  main .main__etc-service--container .different-service-container .different-contents {
+    padding: 3rem 1rem;
+  }
+}
+main .main__etc-service--container .different-service-container .different-contents h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+main .main__etc-service--container .different-service-container .different-contents .different-contents-label {
+  color: #868686;
+  margin-bottom: 2rem;
+}
+main .main__etc-service--container .different-service-container .different-contents .service-container {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media all and (max-width: 768px) {
+  main .main__etc-service--container .different-service-container .different-contents .service-container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+main .main__etc-service--container .different-service-container .different-contents .service-container .different-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 260px;
+  flex: 1;
+  padding: 3rem;
+  border-radius: 4px;
+  background-color: #ffffff;
+  line-height: 1.5;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+@media all and (max-width: 1024px) {
+  main .main__etc-service--container .different-service-container .different-contents .service-container .different-service {
+    padding: 1.5rem;
+  }
+}
+main .main__etc-service--container .different-service-container .different-contents .service-container .different-service h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+main .main__etc-service--container .different-service-container .different-contents .service-container .different-service p {
+  font-size: 16px;
+  color: #868686;
+  word-break: keep-all;
+}
+main .main__etc-service--container .different-service-container .different-contents .service-container .different-service button {
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  font-family: "Pretendard-Regular";
+  border: 1px solid #47c880;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #47c880;
+  border-radius: 1.5rem;
+}
+main .main__etc-service--container .different-service-container .different-contents .service-container .different-service button:hover {
+  cursor: pointer;
+  background-color: #47c880;
+}
+
+.footer {
+  background-color: #303740;
+  padding: 3rem 2rem;
+}
+.footer .footer__nav--container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 2rem 2rem 2rem;
+  border-bottom: 1px solid #5c5c5c;
+  display: flex;
+  justify-content: space-between;
+}
+@media all and (max-width: 768px) {
+  .footer .footer__nav--container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer .footer__nav--container ul {
+  font-size: 14px;
+}
+@media all and (max-width: 768px) {
+  .footer .footer__nav--container ul {
+    text-align: center;
+  }
+}
+.footer .footer__nav--container ul li:nth-child(1) {
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+@media all and (max-width: 768px) {
+  .footer .footer__nav--container ul li:nth-child(1) {
+    margin: 2rem 0 1rem 0;
+  }
+}
+.footer .footer__nav--container ul li {
+  color: #bdbdbd;
+  margin-bottom: 1rem;
+}
+.footer .footer__nav--container ul li span:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #bdbdbd;
+  box-sizing: border-box;
+}
+.footer .footer__company-info {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 2rem 2rem 0 2rem;
+}
+.footer .footer__company-info div {
+  margin: 1rem 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #bdbdbd;
+}
+
+body {
+  font-family: "Pretendard-Regular";
+  overflow-x: clip;
+}
+
+/*# sourceMappingURL=style.css.map */
