@@ -1,0 +1,135 @@
+// color
+$color-primary: #47c880;
+$color-base-black: #242424;
+$color-black: #000000;
+$color-grey: #868686;
+$color-dark-grey: #5c5c5c;
+$color-middle-grey: #bdbdbd;
+$color-light-grey: #f9f9f9;
+$color-white: #ffffff;
+$color-base-font: #495057;
+$color-base-border: #f1f3f5;
+$color-join-btn: #ff7867;
+$color-blue: #175cbe;
+$color-star: #fdcc11;
+$color-footer: #303740;
+
+// banner color
+$color-banner-background-1: #020002;
+$color-banner-background-2: #38e5ff;
+$color-banner-background-3: #fbfbf3;
+$color-banner-background-4: #3100e1;
+$color-banner-background-5: #ff7836;
+$color-banner-background-6: #d2d9dd;
+$color-banner-background-7: #086397;
+$color-banner-background-8: #59cf93;
+$color-banner-background-9: #00c471;
+
+$color-banner-background: (
+  1: $color-banner-background-1,
+  2: $color-banner-background-2,
+  3: $color-banner-background-3,
+  4: $color-banner-background-4,
+  5: $color-banner-background-5,
+  6: $color-banner-background-6,
+  7: $color-banner-background-7,
+  8: $color-banner-background-8,
+  9: $color-banner-background-9,
+);
+
+// hover-color
+$color-join-btn-hover: #ee6d5c;
+$color-primary-hover: #d6eee1;
+
+// badge-color
+$color-course-badge: #f6d5ea;
+
+// width
+$body-global-width: 1200px;
+$body-desktop-width: 1080px;
+$body-tablet-width: 1024px;
+$body-mobile-width: 768px;
+
+// font-size
+$font-xlg: 32px;
+$font-lg: 24px;
+$font-md: 16px;
+$font-sm: 14px;
+$font-ssm: 12px;
+
+// border-radius
+$base-border-radius: 4px;
+
+// course-thumbnail url
+$free-course-thumnail: (
+  1: "/assets/images/무료강의1.png",
+  2: "/assets/images/무료강의2.png",
+  3: "/assets/images/무료강의3.png",
+  4: "/assets/images/무료강의4.png",
+  5: "/assets/images/무료강의5.png",
+  6: "/assets/images/무료강의6.jfif",
+  7: "/assets/images/무료강의7.png",
+  8: "/assets/images/무료강의8.jfif",
+  9: "/assets/images/무료강의9.png",
+  10: "/assets/images/무료강의10.jpg",
+  11: "/assets/images/무료강의11.jpg",
+  12: "/assets/images/무료강의12.jpg",
+);
+
+// novice-thumbnail url
+$novice-course-thumbnail: (
+  1: "/assets/images/왕초보강의1.png",
+  2: "/assets/images/왕초보강의2.png",
+  3: "/assets/images/왕초보강의3.png",
+  4: "/assets/images/왕초보강의4.jfif",
+  5: "/assets/images/왕초보강의5.jpg",
+  6: "/assets/images/왕초보강의6.jpg",
+  7: "/assets/images/왕초보강의7.jpg",
+  8: "/assets/images/왕초보강의8.png",
+  9: "/assets/images/왕초보강의9.jpg",
+  10: "/assets/images/왕초보강의10.png",
+  11: "/assets/images/왕초보강의11.png",
+  12: "/assets/images/왕초보강의12.png",
+  13: "/assets/images/왕초보강의13.png",
+  14: "/assets/images/무료강의1.png",
+  15: "/assets/images/왕초보강의15.png",
+);
+
+// roadmap-thumbnail url
+$roadmap-thumbnail: (
+  1: "/assets/images/로드맵1.png",
+  2: "/assets/images/로드맵2.png",
+  3: "/assets/images/로드맵3.png",
+  4: "/assets/images/로드맵4.png",
+  5: "/assets/images/로드맵5.png",
+  6: "/assets/images/로드맵6.png",
+  7: "/assets/images/로드맵7.png",
+  8: "/assets/images/로드맵8.png",
+  9: "/assets/images/로드맵9.png",
+  10: "/assets/images/로드맵10.png",
+  11: "/assets/images/로드맵11.png",
+  12: "/assets/images/로드맵12.png",
+);
+
+// article-thumbnail url
+$article-thumbnail: (
+  1: "/assets/images/아티클1.png",
+  2: "/assets/images/아티클2.png",
+  3: "/assets/images/아티클3.jpg",
+);
+
+// new-course-thumbnail url
+$new-course-thumbnail: (
+  1: "/assets/images/신규강의1.png",
+  2: "/assets/images/신규강의2.png",
+  3: "/assets/images/왕초보강의10.png",
+  4: "/assets/images/신규강의4.png",
+  5: "/assets/images/신규강의5.png",
+  6: "/assets/images/신규강의6.png",
+  7: "/assets/images/신규강의7.png",
+  8: "/assets/images/무료강의10.jpg",
+  9: "/assets/images/신규강의9.png",
+  10: "/assets/images/신규강의10.png",
+  11: "/assets/images/신규강의11.png",
+  12: "/assets/images/신규강의12.png",
+);

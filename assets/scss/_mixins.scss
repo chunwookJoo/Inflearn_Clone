@@ -1,0 +1,33 @@
+@use "sass:map";
+
+@mixin display-flex($content) {
+  display: flex;
+  align-items: center;
+  justify-content: $content;
+}
+
+@mixin base-button($border, $background, $hover-background) {
+  font-family: "Pretendard-Regular";
+  border: 1px solid $border;
+  border-radius: $base-border-radius;
+  font-size: $font-md;
+  background-color: $background;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $hover-background;
+  }
+}
+
+@mixin media($name) {
+  $breakpoints: (
+    global: $body-global-width,
+    desktop: $body-desktop-width,
+    tablet: $body-tablet-width,
+    mobile: $body-mobile-width,
+  );
+
+  @media all and (max-width: map.get($breakpoints, $name)) {
+    @content;
+  }
+}
