@@ -137,6 +137,13 @@ table {
   border-spacing: 0;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 11;
+  background: #ffffff;
+  box-shadow: 0 1px 4px #bdbdbd;
+}
 .header .header__content--container {
   border-bottom: 1px solid #f1f3f5;
 }
